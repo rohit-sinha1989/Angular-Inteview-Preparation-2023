@@ -37,6 +37,17 @@
            https://www.pluralsight.com/guides/querying-the-dom-with-@viewchild-and-@viewchildren
 
 
-  
+  # What ways of binding in Angular?
+              One-way Binding
+              Two-Way Binding
+
+ # What is service in Angular?
+                
+    1. Services in Angular are simply typescript classes with the @injectible decorator. This decorator tells angular that the           class is a service and can be injected into components that need that service. They can also inject other services as             dependencies. 
+    2. As mentioned earlier, these services are used to share a single piece of code across multiple components. These services are used to hold business logic. Services are used to interact with the backend. For example, if you wish to make AJAX calls, you can have the methods to          those calls in the service and use it as a dependency in files.
+    In angular, the components are singletons, meaning that only one instance of a service that gets created, and the same            instance is used by every building block in the application. 
+    A service can be registered as a part of the module, or as a part of the component. To register it as a part of the               component, you’ll have to specify it in the providers’ array of the module.
+
+
 
   
