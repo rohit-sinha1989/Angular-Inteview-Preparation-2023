@@ -1,4 +1,4 @@
-### Angular Questions and Answers
+[### Angular Questions and Answers
 
 # **1. What is SPA? How it is different from server-side rendering and what are the pros and cons of SPA?**
     SPA - It means that we don't have anything on the backend but just client JavaScript.This client JavaScript is being loaded inside the client browser and is executed and then everything is rendered on screen just with the help of JavaScript.
@@ -44,10 +44,31 @@
  # What is service in Angular?
                 
     1. Services in Angular are simply typescript classes with the @injectible decorator. This decorator tells angular that the           class is a service and can be injected into components that need that service. They can also inject other services as             dependencies. 
-    2. As mentioned earlier, these services are used to share a single piece of code across multiple components. These services are used to hold business logic. Services are used to interact with the backend. For example, if you wish to make AJAX calls, you can have the methods to          those calls in the service and use it as a dependency in files.
+    2. As mentioned earlier, these services are used to share a single piece of code across multiple components. These services are used to hold business logic. Services are used to interact with the backend. For example, if you wish to make AJAX calls, you can have the methods to those calls in the service and use it as a dependency in files.
     In angular, the components are singletons, meaning that only one instance of a service that gets created, and the same            instance is used by every building block in the application. 
     A service can be registered as a part of the module, or as a part of the component. To register it as a part of the               component, you’ll have to specify it in the providers’ array of the module.
 
-
+# What is AOT (Ahead-Of-Time) Compilation?
+           The Angular Ahead-of-Time compiler pre-compiles application components and their templates during the build process.              Apps compiled with AOT launch faster for several reasons.
+          Templates are embedded as code within their components so there is no client-side request for template files.
+            At the end of the restore view phase of the JSF request lifecycle, Seam attempts to restore any previous long-running         conversation context. If none exists, Seam creates a new temporary conversation context.
+        Application components execute immediately, without client-side compilation
+        The compiler discards unused Angular directives that a tree-shaking tool can then exclude
 
   
+# What is ViewEncapsulation and how many ways are there do to do it in Angular?
+      To put simply, ViewEncapsulation determines whether the styles defined in a particular component will affect the entire application or not. Angular supports 3 types of ViewEncapsulation:
+      Emulated : Styles used in other HTML spread to the component
+      Native : Styles used in other HTML doesn’t spread to the component
+      None : Styles defined in a component are visible to all components of the application
+
+
+# What is AOT Compilation?
+    Angular AOT contains mainly of components and their HTML templates.The components and templates are provided by the angular requires a compilation process before it can run in browser.AOT helps in converting Angular HTML and TypeScript code in to efficient JavaScript code while building phase before the browser downloads and runs the code.
+    Here are some reasons you might want to use AOT:
+    Faster rendering
+    Fewer asynchronous requests
+    Smaller Angular framework download size
+    Detect template errors earlier
+    Better security
+
