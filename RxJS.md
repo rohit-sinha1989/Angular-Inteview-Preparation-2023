@@ -324,7 +324,9 @@ failingHttpRequest$.pipe(
 
 Before having a look at another popular use of 'catchError', let's introduce a built-in Observable provided by RxJS. It's called 'EMPTY' and this Observable is empty, as it says. So once you subscribe to it, it doesn't emit any values. It will immediately complete instead. This is useful if you would like to hide the error notification from your Observer, but don't want to provide any fallback values.
 
-
+# Subject, ReplaySubject and BehaviorSubject
+   https://levioconsulting.com/insights/intro-to-rxjs-in-angular-observables-subjects-and-behaviorsubjects/#:~:text=Subjects%20are%20a%20type%20of%20Observable.&text=The%20way%20to%20differentiate%20a,last%20emitted%20value%20upon%20subscription.
+   
 
 
 
