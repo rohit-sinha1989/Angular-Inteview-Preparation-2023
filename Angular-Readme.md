@@ -71,4 +71,62 @@
     Smaller Angular framework download size
     Detect template errors earlier
     Better security
+    
+# What is Dependency Injection?
+
+    1. Using Dependency Injection we move the creation of binding dependent object otside of the class that depend on them. 2. DI       keeps the code more flexible testable and mutable. 3. Class can inherit external logic without having to create on its own. 4.      DI benefits directives, pipes and components.
+
+    Consider all the components of an application performing common tasks like accessing database, rendering images on the view     
+    etc. To avoid rewriting of code, angular services can be used. These services can then be injected into the components that         require that service.
+    
+# Difference between integration test and unit test?
+
+    1. Integration test includes (“integrates”) the dependencies. Unit test replaces the dependencies with fakes in order to     
+     isolate the code under test.
+
+    2. Unit test is written for individual units or components of an application. Integration tests is written for two or more 
+     units. An integration test does not test a complete workflow, nor does it test an isolated unit.
+
+# What are ViewChild and ViewChildren in Angular?
+
+    ViewChild is a decorator that creates a view or DOM query. 
+    ViewChildren is another property decorator which is used to query the DOM for multiple elements and return a QueryList.
+
+# What is Pipe ? Pure vs impure pipe ?
+
+    Pipes help you to transform data from one format to another format. There have few inbuilt pipes in angular : DatePipe,     
+    CurrencyPipe, UpperCasePipe, LowerCasePipe, JsonPipe.
+
+    An impure pipe is called for every change detection cycle no matter whether the value or parameter(s) changes. 
+    A pure pipe is only called when Angular detects a change in the value or the parameters passed to a pipe.
+
+# How many directives are there?
+
+    1. Attribute 2. Structural 3. Component
+    
+# component vs directive ?
+
+    Components are a type of Directive. 
+    @Directive is a decorator which is used to instruct the DOM to either add a new element 
+    or, remove or modify an existing element. 
+    @Component is a subclass of @Directive with one additional functionality. Using     
+    @component, you can create own HTML template.
+
+# What do you mean by data binding & two way data binding.
+
+    Types of Data Binding : 1. Interpolation & Property binding 2. Event binding 3. Two way binding
+
+    Interpolation is used to just display/bind a piece of data in HTML UI element, such as displaying a title or a name.
+
+    Property binding lets us bind a property of a DOM object, for example the hidden property, to some data value. It uses syntax 
+    [].
+
+    Event binding is used to handle the events raised by the user actions like button click, mouse movement, keystrokes, etc. It 
+    flows from the view to the model when an event is triggered.
+
+    In Two way binding, data flows from model to view and view to model.
+
+
+
+
 
