@@ -127,7 +127,66 @@
 
     In Two way binding, data flows from model to view and view to model.
 
+# what is angular ivy
+    Rendering engine: A rendering engine is a software or program inside a browser that parses and transforms HTML and CSS code so     that the browser can display it.Browser engine transforms CSS and JS and renders the result to the screen
+    Browser engine transforms CSS and JS and renders the result to the screen
 
+    However, browsers cannot render HTML and CSS codes coming from Angular or any other framework because the HTML and CSS are not     pure (they may be inside custom templates or components). Therefore, something needs to transform these components into what       the browser can render. This is where the Angular rendering engine comes in.
+    Ivy rendering engine
+
+    Ivy is the rendering engine that transforms Angular code (template HTML + TS) into pure HTML and JavaScript that the browser       understands. When this transformation is done, the browser can understand and render the resulting HTML and JavaScript to 
+    display content, as illustrated in the image above.
+
+    Ivy is a complete rewrite of the View Engine—the default engine for building Angular apps from Angular 4 until it was retired      in Angular 8. It is the third engine since the creation of Angular in 2016, and Angular has shipped with Ivy since the 
+    introduction of Angular 9 till the present day.
+    
+    Benefits of using Ivy
+    Ivy comes with many improvements, which include the following:
+
+    AOT compilation: Ahead of Time (AOT) compiles an app before it goes to a runtime environment like a browser. AOT reduces the       load on the browser since it precompiles the app before it reaches the browser.
+
+    Smaller bundle size: Bundle size is the amount of code a browser will have to download to load your app. Ivy downsizes the 
+    bundle size through AOT and tree-shaking.
+
+    Improved speed: Angular apps load more quickly than before, thanks to a smaller bundle size and the tree-shaking capability of 
+    Ivy.
+
+    Ivy is much faster than its predecessor because it now ships with ahead-of-time (AOT) compilation by default. AOT enables the 
+    browser to load the application quickly without downloading the compiler and building the app itself.
+
+    Just-in-time (JIT) compilation was the default compiling mechanism in previous versions of Angular, through which the browser 
+    would download the compiler and build the app. However, this process was inefficient because it was slow and burdened the 
+    browser.
+
+    Note: Angular has just one compiler. AOT and JIT just refer to how and when you use the compiler. With AOT, the compiler runs 
+    at build time. With JIT, the compiler runs at runtime.
+
+    The Ivy engine is a critical part of Angular. Hence, having a basic idea of what it does is important.
+
+# What is Angular Interceptor
+
+    HTTP Interceptors are a concept in web development and server-side programming, typically associated with web frameworks and       libraries.
+
+    · These interceptors allow developers to intercept and handle HTTP requests and responses globally within an application.
+    HTTP Interceptors in Angular are classes that implement the HttpInterceptor interface.
+    HTTP Interceptor
+
+    · They can be used to perform various tasks related to HTTP requests and responses, such as adding headers, handling errors,         modifying the request or response data, logging, authentication, etc.
+
+    · HttpInterceptor defines a single method called intercept, which takes two parameters: the HttpRequest and the HttpHandler.
+
+    There are multiple real-time senarios where angular interceptors can be really useful:
+
+        Modify HTTP headers
+        Modifying the request body
+        Set authentication/authorization token
+        Modify the HTTP response
+        Error handling
+        Change the Requested URL
+
+    Also, we can have multiple interceptors in our application having different functionality.
+
+    
 
 
 
