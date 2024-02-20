@@ -112,6 +112,17 @@
     or, remove or modify an existing element. 
     @Component is a subclass of @Directive with one additional functionality. Using     
     @component, you can create own HTML template.
+    Some of the major differences are mentioned in a tabular form
+
+    | Component  | Directive |
+    | ------------- | ------------- |
+    | To register a component we use @Component meta-data annotation  | To register a directive we use @Directive meta-data     
+     annotation  |
+    | Components are typically used to create UI widgets  | Directives are used to add behavior to an existing DOM element  |
+    | Component is used to break down the application into smaller components  | Directive is used to design re-usable components      |
+    | Only one component can be present per DOM element  | Many directives can be used per DOM element  |
+    | @View decorator or templateurl/template are mandatory | Directive doesn't use View |
+ 
 
 # What do you mean by data binding & two way data binding.
 
