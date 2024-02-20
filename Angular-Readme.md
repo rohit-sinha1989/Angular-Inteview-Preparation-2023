@@ -34,7 +34,8 @@
 
      
   # What is the difference between @ViewChild() and @ViewChildren()
-           https://www.pluralsight.com/guides/querying-the-dom-with-@viewchild-and-@viewchildren
+          [ https://www.pluralsight.com/guides/querying-the-dom-with-@viewchild-and-@viewchildren]    
+         (https://www.freecodecamp.org/news/angular-8-dom-queries-viewchild-and-viewchildren-example/)
 
 
   # What ways of binding in Angular?
