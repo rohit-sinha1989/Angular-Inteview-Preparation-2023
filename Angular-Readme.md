@@ -197,7 +197,45 @@
 
     Also, we can have multiple interceptors in our application having different functionality.
 
+#     What are the key components of Angular?
+
+        Angular has the key components below,
+        Component: These are the basic building blocks of an Angular application to control HTML views.
+        
+        Modules: An Angular module is a set of angular basic building blocks like components, directives, services etc. An 
+        application is divided into logical pieces and each piece of code is called as "module" which perform a single task.
+        
+        Templates: These represent the views of an Angular application.
+        
+        Services: Are used to create components which can be shared across the entire application.
+        
+        Metadata: This can be used to add more data to an Angular class.
+
+# What are lifecycle hooks available?
+
+    Angular application goes through an entire set of processes or has a lifecycle right from its initiation to the end of the         application. The representation of lifecycle in pictorial representation as follows,
+
+
+![alt text]([http://url/to/img.png](https://github.com/sudheerj/angular-interview-questions/blob/master/images/lifecycle.png?raw=true))
+    The description of each lifecycle method is as below,
+
+    ngOnChanges: When the value of a data bound property changes, then this method is called.
     
+    ngOnInit: This is called whenever the initialization of the directive/component after Angular first displays the data-bound        properties happens.
+    
+    ngDoCheck: This is for the detection and to act on changes that Angular can't or won't detect on its own.
+    
+    ngAfterContentInit: This is called in response after Angular projects external content into the component's view.
+    
+    ngAfterContentChecked: This is called in response after Angular checks the content projected into the component.
+    
+    ngAfterViewInit: This is called in response after Angular initializes the component's views and child views.
+    
+    ngAfterViewChecked: This is called in response after Angular checks the component's views and child views.
+    
+    ngOnDestroy: This is the cleanup phase just before Angular destroys the directive/component
+
+
 
 
 
