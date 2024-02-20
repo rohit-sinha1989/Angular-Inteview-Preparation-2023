@@ -216,7 +216,7 @@
     Angular application goes through an entire set of processes or has a lifecycle right from its initiation to the end of the         application. The representation of lifecycle in pictorial representation as follows,
 
 
-![alt text]([http://url/to/img.png](https://github.com/sudheerj/angular-interview-questions/blob/master/images/lifecycle.png?raw=true))
+!([http://url/to/img.png](https://github.com/sudheerj/angular-interview-questions/blob/master/images/lifecycle.png?raw=true))
     The description of each lifecycle method is as below,
 
     ngOnChanges: When the value of a data bound property changes, then this method is called.
